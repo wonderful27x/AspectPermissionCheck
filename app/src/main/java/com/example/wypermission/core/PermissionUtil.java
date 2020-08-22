@@ -33,18 +33,11 @@ public class PermissionUtil {
 
     private static final String TAG = "PermissionUtil";
 
-    //定义8种需要申请的运行时权限，key：权限，value：权限的最小sdk版本
+    //定义需要申请的运行时权限，key：权限，value：权限的最小sdk版本
     private static SimpleArrayMap<String,Integer> MIN_SDK_PERMISSIONS = new SimpleArrayMap<>(8);
 
     static {
-        MIN_SDK_PERMISSIONS.put("com.android.voicemail.permission.ADD_VOICEMAIL", 14);
-        MIN_SDK_PERMISSIONS.put("android.permission.BODY_SENSORS", 20);
-        MIN_SDK_PERMISSIONS.put("android.permission.READ_CALL_LOG", 16);
         MIN_SDK_PERMISSIONS.put("android.permission.READ_EXTERNAL_STORAGE", 16);
-        MIN_SDK_PERMISSIONS.put("android.permission.USE_SIP", 9);
-        MIN_SDK_PERMISSIONS.put("android.permission.WRITE_CALL_LOG", 16);
-        MIN_SDK_PERMISSIONS.put("android.permission.SYSTEM_ALERT_WINDOW", 23);
-        MIN_SDK_PERMISSIONS.put("android.permission.WRITE_SETTINGS", 23);
         MIN_SDK_PERMISSIONS.put("android.permission.READ_CALENDAR", 23);
         MIN_SDK_PERMISSIONS.put("android.permission.CALL_PHONE", 23);
     }
