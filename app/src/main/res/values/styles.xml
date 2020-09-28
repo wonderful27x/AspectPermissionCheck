@@ -7,4 +7,14 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- 权限申请Activity的主题 -->
+    <style name="PermissionTheme" parent="AppTheme">
+        <!--去掉标题栏-->
+        <item name="windowNoTitle">true</item>
+        <!--设置背景颜色,半透明更好-->
+        <item name="android:windowBackground">@color/permissionTransparent</item>
+        <!--透明模式-->
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
 </resources>

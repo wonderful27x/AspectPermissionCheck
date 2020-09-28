@@ -9,7 +9,6 @@ import android.os.Bundle;
 import android.util.Log;
 import com.example.wypermission.R;
 import com.example.wypermission.annotation.IPermission;
-import com.example.wypermission.utils.MemoryUtil;
 
 /**
  * 权限申请的主要场所，因为权限申请依赖于Activity，所有需要这样一个Activity来集中处理需要申请的权限
